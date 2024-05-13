@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dailycode.graphqldemo.controller.PlayerControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-13T14:31:04" hostname="Somnaths-MBP.bbrouter" time="0.463">
+  <properties/>
+  <testcase name="testShouldCreateNewPlayer()" classname="com.dailycode.graphqldemo.controller.PlayerControllerTest" time="0.463"/>
+  <system-out><![CDATA[20:01:04.037 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dailycode.graphqldemo.controller.PlayerControllerTest]: PlayerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:01:04.095 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dailycode.graphqldemo.GraphqlDemoApplication for test class com.dailycode.graphqldemo.controller.PlayerControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-13T20:01:04.245+05:30  INFO 76111 --- [graphql-demo] [    Test worker] c.d.g.controller.PlayerControllerTest    : Starting PlayerControllerTest using Java 17.0.5 with PID 76111 (started by somnathmukherjee in /Users/somnathmukherjee/Downloads/graphql-demo)
+2024-05-13T20:01:04.246+05:30  INFO 76111 --- [graphql-demo] [    Test worker] c.d.g.controller.PlayerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-05-13T20:01:04.486+05:30  INFO 76111 --- [graphql-demo] [    Test worker] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2024-05-13T20:01:04.592+05:30  INFO 76111 --- [graphql-demo] [    Test worker] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {}
+	Unmapped registrations: {}
+	Skipped types: []
+2024-05-13T20:01:04.630+05:30  INFO 76111 --- [graphql-demo] [    Test worker] c.d.g.controller.PlayerControllerTest    : Started PlayerControllerTest in 0.504 seconds (process running for 0.963)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
