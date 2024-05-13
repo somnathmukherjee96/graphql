@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @GraphQlTest(PlayerController.class)
 class PlayerControllerTest {
     @Autowired GraphQlTester tester;
+    @Autowired PlayerService playerService;
 
     @Test
     void testFindAllPlayersShouldReturnAllPlayers(){
@@ -98,5 +99,23 @@ class PlayerControllerTest {
                     Assertions.assertEquals("Jadeja", player.name());
                     Assertions.assertEquals(Team.CSK, player.team());
                 });
+    }
+
+    @Test
+    void testShouldDeletePlayer(){
+        int size = playerService.findAll().size();
+        String document = """
+                mutation delete($id: ID) {
+                    delete(id: $id){
+                        id
+                        name
+                        team
+                    }
+                }
+                """;
+        tester.document(document)
+                .variable("id", 3)
+                .executeAndVerify();
+        Assertions.assertEquals(size-1, playerService.findAll().size());
     }
 }
